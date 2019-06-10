@@ -5,9 +5,11 @@ import json
 import itchat
 
 '''请修改 
-1. 第20行的beginning_date, 换成在一起的第一天
-2. 第26行的province和city, 换成你所在的省份和城市
-2. 第73行的to_username, 换成发送对象的(用户名/昵称)都可以'''
+1-1. 第2行的itchat没有模块请cmd输入: pip install requests 安装 
+1-2. 第5行的itchat没有模块请到这里安装: https://github.com/littlecodersh/ItChat
+2. 第20行的beginning_date, 换成在一起的第一天
+3. 第26行的province和city, 换成你所在的省份和城市
+4. 第78行的to_username, 换成发送对象的(用户名/昵称)都可以'''
 
 
 
@@ -75,4 +77,4 @@ print(final_msg)
 
 to_username='Mr.云景'
 itchat.auto_login(hotReload=True)
-itchat.send(msg=final_msg,toUserName='filehelper')
+itchat.send(msg=final_msg,toUserName=to_username)
